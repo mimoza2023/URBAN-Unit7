@@ -1,0 +1,266 @@
+html {
+  font-family: 'Cormorant';
+  color: rgb(21, 22, 24);
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.wrapper,
+.title,
+.collections,
+.explore,
+.card,
+.clients-feedback,
+.review {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-header {
+  max-width: 100%;
+  padding: 30px 0 0 0;
+}
+
+.container {
+  width: 1200px;
+  outline: 2px solid red;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.header,
+.nav,
+.contacts,
+.person,
+.collection,
+.reviews {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header, .contacts {
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 142px; 
+  font-family: 'Open sans';
+  margin-bottom: 28px;
+}
+
+.logo {
+  width: 73.2px;
+  height: 105px;
+  background-image: url(../Tea-img/logo.svg);
+  margin-top: -40px;
+}
+
+.nav {
+  width: 582px;
+  height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+}
+
+.main {
+  width: 100%;
+}
+
+.contacts {
+  width: 180px;
+  height: 29px;
+}
+
+.person {
+  width: 58px;
+  height: 100%;
+  align-items: start;
+}
+
+.bag, 
+.man, 
+.search {
+  height: 22px;
+}
+
+.bag {
+  width: 20px;
+  background-image: url(../Tea-img/bag-icon.svg);
+}
+
+.man {
+  width: 18px;
+  background-image: url(../Tea-img/man-icon.svg);
+}
+
+.search {
+  width: 22px;
+  background-image: url(../Tea-img/loupe-icon.svg);
+}
+
+.banner, .title {
+  position: relative;;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  background: url(../Tea-img/baner.jpg) no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.title {
+  gap: 20px;
+  padding: 254px 0 0 0;
+  z-index: 2;
+}
+
+.h1-caption {
+  width: 820px;
+  height: 120px;
+}
+
+.h3-caption {
+  width: 570px;
+  height: 58px;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  margin: 0; 
+}
+
+h1, h3 {
+  color: #fff;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48.44px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 29.06px;
+}
+
+.collections {
+  gap: 150px;
+  padding: 150px 0;
+}
+
+.quote {
+  position: relative;
+  width: 745px;
+  height: 96px;
+  font-size: 40px;
+  line-height: 48.44px;
+  font-style: italic;
+  text-align: center;  
+  margin: 0 auto;
+}
+
+.quote-text {
+  position: relative;
+  z-index: 2;
+}
+
+.text-phone {
+  position: absolute;
+  left: 400px;
+  top: 48px;
+  width: 385px;
+  height: 61px;
+  background-color: #F7F2EA;
+  opacity: 50%;
+  z-index: 1;
+}
+
+.explore {
+  text-align: center;
+  gap: 60px;
+}
+
+.collection {
+  width: 100%;
+  outline: 1px solid brown;
+}
+
+.card {
+  width: 208px;
+  height: 247px;
+  justify-content: space-between;
+  margin: 0;
+  outline: 1px solid brown;
+}
+
+.tea-variety {
+  width: 100%;
+  height: 208px;
+}
+
+.tea-img1 {
+  background-image: url(../Tea-img/black-tea.png);
+}
+
+.tea-img2 {
+  background-image: url(../Tea-img/green-tea.png);
+}
+
+.tea-img3 {
+  background-image: url(../Tea-img/white-tea.png);
+}
+
+.tea-img4 {
+  background-image: url(../Tea-img/oolong-tea.png);
+}
+
+.tea-img5 {
+  background-image: url(../Tea-img/puerh-tea.png);
+}
+
+.feedback {
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+  background: #F7F2EA;
+  opacity: 50%;
+}
+
+.clients-feedback {
+  gap: 60px;
+}
+
+.reviews {
+  width: 100%;
+}
+
+.review {
+  width: 280px;
+  height: 169px;
+  gap: 10px;
+  outline: 1px solid black;
+}
+
+.review-text {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-style: italic;
+  text-align: left;
+  line-height: 21.79px;
+}
+
+
+
