@@ -5,19 +5,42 @@ html {
   box-sizing: border-box;
 }
 
-.wrapper,
+body {
+  max-width: 100%;
+  margin: 0;
+}
+
 .title,
 .collections,
 .explore,
 .card,
 .clients-feedback,
-.review {
+.review,
+.tea-blog,
+.blog-cards,
+.card-content,
+.card-title,
+.know-content,
+.know-form,
+.priorities-content,
+.priority,
+.fig-title,
+.footer-left01,
+.footer-left02,
+.lists,
+.ftr-quote,
+.footer-right01,
+.footer-right02,
+.quote,
+.request,
+.contacts-links,
+.touch {
   display: flex;
   flex-direction: column;
 }
 
 .wrapper-header {
-  max-width: 100%;
+  max-width: 100vw;
   padding: 30px 0 0 0;
 }
 
@@ -32,12 +55,31 @@ p {
   margin: 0;
 }
 
+a {
+  color: #151618;
+  text-decoration: none;
+}
+
 .header,
 .nav,
 .contacts,
 .person,
 .collection,
-.reviews {
+.reviews,
+.blog-content,
+.read,
+.know-container,
+.input,
+.check,
+.priorities-container,
+.footer-content,
+.footer-left,
+.footer-right,
+.link,
+.social,
+.pay,
+.pay-icons,
+.pay-sistems {
   display: flex;
   justify-content: space-between;
 }
@@ -46,11 +88,30 @@ p {
   align-items: center;
 }
 
+.header,
+.review-text, 
+.author,
+.sign,
+.button, 
+.input-btn,
+.know-text, 
+.email-field,
+.label-text,
+.priority-caption,
+.priority-sign,
+.lists,
+.quote-style,
+.quote-sign,
+.request-text,
+.contact-text,
+.copy {
+  font-family: 'Open sans';
+}
+
 .header {
   width: 100%;
   height: 142px; 
-  font-family: 'Open sans';
-  margin-bottom: 28px;
+  margin: 30px 0;
 }
 
 .logo {
@@ -116,8 +177,15 @@ p {
   z-index: 1;
 }
 
-.title {
+.title,
+.lists,
+.ftr-quote,
+.request,
+.contacts-links {
   gap: 20px;
+}
+
+.title {
   padding: 254px 0 0 0;
   z-index: 2;
 }
@@ -188,14 +256,19 @@ h3 {
   z-index: 1;
 }
 
+.explore,
+.clients-feedback,
+.tea-blog,
+.priorities-content {
+  gap: 60px;
+}
+
 .explore {
   text-align: center;
-  gap: 60px;
 }
 
 .collection {
   width: 100%;
-  outline: 1px solid brown;
 }
 
 .card {
@@ -203,7 +276,6 @@ h3 {
   height: 247px;
   justify-content: space-between;
   margin: 0;
-  outline: 1px solid brown;
 }
 
 .tea-variety {
@@ -235,12 +307,7 @@ h3 {
   width: 100%;
   padding: 60px 0;
   text-align: center;
-  background: #F7F2EA;
-  opacity: 50%;
-}
-
-.clients-feedback {
-  gap: 60px;
+  background: rgba(247, 242, 234, 0.5);
 }
 
 .reviews {
@@ -251,16 +318,530 @@ h3 {
   width: 280px;
   height: 169px;
   gap: 10px;
-  outline: 1px solid black;
+}
+
+.review-text, .author {
+  text-align: left;
 }
 
 .review-text {
-  font-family: 'Open Sans';
   font-size: 16px;
   font-style: italic;
-  text-align: left;
   line-height: 21.79px;
 }
 
+.author,
+.button,
+.know-text,
+.email-field,
+.input-btn {
+  font-size: 20px;
+}
+
+.author {
+  font-style: normal;
+  line-height: 27.24px;
+  font-weight: 600;
+}
+
+.blog {
+  padding: 150px 0;
+}
+
+.tea-blog {
+  text-align: center;
+}
+
+.blog-content {
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  display: flex;
+  width: 542px;
+  height: 180px;
+}
+
+.blog-cards {
+  gap: 40px
+}
+
+.blog-card {
+  display: flex;
+  width: 542px;
+  height: 180px;
+}
+
+.card-img {
+  width: 270px;
+  height: 100%;
+}
+
+.img1 {
+  background-image: url(../Tea-img/tea-time.jpg);
+}
+
+.img2 {
+  background-image: url(../Tea-img/tea-rific.jpg);
+}
+
+.img3 {
+  background-image: url(../Tea-img/tea-role.jpg);
+}
+
+.img4 {
+  background-image: url(../Tea-img/tea-effects.jpg);
+}
+
+.card-content {
+  width: 272px;
+  height: 100%;
+  gap: 48px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.card-title {
+  width: 255px;
+  gap: 10px;
+}
+
+.card-caption {
+  width: 100%;
+  height: 86px;
+  font-size: 24px;
+  line-height: 29.06px;
+  font-weight: 400;
+}
+
+.sign {
+  font-size: 13px;
+  line-height: 17.7px;
+  color: #000;
+}
+
+.read {
+  width: 43px;
+  height: 18px;
+  align-items: center;
+}
+
+.read-icon {
+  width: 5px;
+  height: 10px;
+  background-image: url(../Tea-img/read-icon.svg);
+}
+
+.blog-button, .form-btn {
+  border: 1px;
+  border-color: #151618; 
+}
+
+.blog-button {
+  margin: 0 auto;
+}
+
+.button, .input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 27.24px;
+  color: #000;
+  background-color: #fff;
+}
+
+.button {
+  width: 149px;
+  height: 51px;
+}
+
+.know-more {
+  position: relative;
+  width: 100%;
+  height: 418px;
+  box-sizing: border-box;
+  padding: 100px 0;
+  background: rgba(247, 242, 234, 0.5);
+  z-index: 1;
+}
+
+.tea-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 673.72px;
+  height: 418px;
+  z-index: 2;
+}
+
+.know-content {
+  gap: 50px;
+}
+
+.know-text, .know-form {
+  width: 580px;
+  gap: 12px;
+}
+
+.know-text, .email-field {
+  line-height: 30px;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+}
+
+.email-field {
+  width: 439px;
+  background: none;
+  color: #B8B58B;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-width: 2px;
+  border-color: #b8b58b;
+}
+
+.input-btn {
+  position: relative;
+  width: 116px;
+  height: 50px;
+  z-index: 3;
+}
+
+.check {
+  width: 580px;
+  gap: 10px;
+}
+
+.check-field {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.label-text {
+  font-size: 13px;
+  line-height: 17.7px;
+}
+
+.priorities {
+  padding: 150px;
+}
+
+.priorities-content {
+  text-align: center;
+}
+
+.priorities-container {
+  width: 100%;
+  height: 178px;
+  outline: 1px solid #151618;
+}
+
+.priority {
+  gap: 39.76px;
+}
+
+.card01, .card02, .card03, .card04 {
+  height: 100%;
+  margin: 0;
+  outline: 1px solid #151618;
+}
+
+.card01 {
+  width: 248px;
+}
+
+.card02 {
+  width: 257px;
+}
+
+.card03 {
+  width: 294px;
+}
+
+.card04 {
+  width: 253px;
+}
+
+.fig-title {
+  width: 100%;
+  gap: 10px;
+  text-align: center;
+}
+
+.priority-caption {
+  font-size: 30px;
+  line-height: 40.85px;
+}
+
+.priority-sign {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.24px;
+}
+
+.priority-icon {
+  width: 65px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.icon01 {
+  background-image: url(../Tea-img/priority-icon1.svg);
+}
+
+.icon02 {
+  background-image: url(../Tea-img/priority-icon2.svg);
+}
+
+.icon03 {
+  background-image: url(../Tea-img/priority-icon3.svg);
+}
+
+.icon04 {
+  background-image: url(../Tea-img/priority-icon4.svg);
+}
+
+.footer {
+  width: 100%;
+  padding-top: 100px;
+  background: rgba(247, 242, 234, 0.5);
+}
+
+.footer-content {
+  gap: 155px;
+}
+
+.footer-left {
+  width: 465px;
+  margin-bottom: 100px;
+}
+
+.footer-left01,
+.footer-left02,
+.footer-right01,
+.footer-right02 {
+  gap: 50px; 
+}
+
+.footer-left01 {
+  width: 97px;
+}
+
+.footer-left02 {
+  width: 155px;
+}
+
+.footer-right {
+  width: 580px;
+}
+
+.footer-right01 {
+  width: 269px;
+}
+
+.footer-right02 {
+  width: 270px;
+}
+
+.list-caption {
+  font-size: 24px;
+  line-height: 29.06px;
+}
+
+.lists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fish {
+  color: rgba(247, 242, 234, 0.5);
+}
+
+.ftr-quote {
+  width: 260px;
+  text-align: left;
+}
+
+.quote-style {
+  font-size: 16px;
+  line-height: 21.79px;
+  font-style: italic;
+  margin: 0;
+}
+
+.quote-sign {
+  width: 129px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16.34px;
+}
+
+.request {
+  width: 100%;
+}
+
+.request-text {
+  font-size: 13px;
+  line-height: 17.7px;
+}
+
+.our-contacts {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: 91px;
+  background-image: url(../Tea-img/logo.svg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+}
+
+.contacts-links {
+  width: 136px;
+  padding-top: 20px;
+}
+
+.link {
+  width: 100%;
+  gap: 10px;
+}
+
+.post {
+  width: 22.16px;
+  height: 16px;
+  background-image: url(../Tea-img/post-icon.svg);
+}
+
+.contact-text {
+  font-size: 13px;
+  line-height: 17.7px;
+}
+
+.phone {
+  width: 20.81px;
+  height: 20.81px;
+  background-image: url(../Tea-img/email-icon..svg);
+}
+
+.touch {
+  gap: 40px;
+}
+
+.social {
+  width: 150px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-left: 97px;
+}
+
+.fb {
+  width: 22px;
+  height: 22px;
+  background-image: url(../Tea-img/fb-icon.svg);
+}
+
+.ytube {
+  width: 24px;
+  height: 18px;
+  background-image: url(../Tea-img/yt-icon.svg);
+}
+
+.inst {
+  width: 22px;
+  height: 22px;
+  background-image: url(../Tea-img/inst-icon.svg);
+}
+
+.tw {
+  width: 22px;
+  height: 18px;
+  background-image: url(../Tea-img/tw-icon.svg);
+}
+
+.pay {
+  width: 118px;
+  align-items: center;
+}
+
+.copy {
+  font-size: 16px;
+  line-height: 21.79px;
+}
+
+.pay-sistems {
+  width: 466px;
+  margin-bottom: 18px;
+}
+
+.pay-icons {
+  width: 156px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.pay-links {
+  cursor: pointer;
+}
+
+.master {
+  width: 26px;
+  height: 20px;
+  background-image: url(../Tea-img/mastercard-icon.png);
+}
+
+.visa {
+  width: 31px;
+  height: 10px;
+  background-image: url(../Tea-img/visa-icon.svg);
+}
+
+.google-pay {
+  width: 29px;
+  height: 12px;
+  background-image: url(../Tea-img/google-pay.png);
+}
+
+.paypal {
+  width: 10px;
+  height: 12px;
+  background-image: url(../Tea-img/paypal-icon.png);
+}
+
+/*----------------------Адаптивы--------------------------*/
+
+@media (max-width: 768px) {
+
+  .container {
+    width: calc(640px + 560 * (100vw - 480px) / 288);
+  }
+
+  .contacts {
+    width: calc(130px + 50 * (100vw - 480px) / 288);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+}
 
 
